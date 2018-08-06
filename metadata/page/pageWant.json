@@ -1,0 +1,51 @@
+{
+  "_id": "pageWant",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "pageWant--RadiosWant",
+      "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose one answer only, or that's as far as this goes"
+        }
+      },
+      "items": [
+        {
+          "_id": "pageWant--RadiosWant--radioMost",
+          "_type": "radio",
+          "label": "More than anything",
+          "value": "wantMost"
+        },
+        {
+          "_id": "pageWant--RadiosWant--radioMuch",
+          "_type": "radio",
+          "label": "Very much",
+          "value": "wantMuch"
+        },
+        {
+          "_id": "pageWant--RadiosWant--radioQuite",
+          "_type": "radio",
+          "label": "Quite a lot",
+          "value": "wantQuite"
+        },
+        {
+          "_id": "pageWant--RadiosWant--radioNotMuch",
+          "_type": "radio",
+          "label": "Not very much",
+          "value": "wantNotMuch"
+        },
+        {
+          "_id": "pageWant--RadiosWant--radioNotAtAll",
+          "_type": "radio",
+          "label": "Not at all really",
+          "value": "wantNotAtAll"
+        }
+      ],
+      "legend": "Please answer honestly",
+      "name": "RadiosWant"
+    }
+  ],
+  "heading": "How much do you want this thing?",
+  "url": "/how-much-do-you-want-this-thing"
+}

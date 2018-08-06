@@ -1,8 +1,16 @@
 {
   "_id": "pageStart",
   "_type": "page.start",
-  "body": "Links and explanations to go here.",
-  "heading": "Welcome to Form Builder",
-  "steps": [],
+  "body": "## Before you start\r\n\r\nLots of people want this thing. We’ll tell you whether you can get it based on what you tell us.",
+  "heading": "Check if you can get a thing",
+  "lede": "Use this service to check if you can apply for a thing.",
+  "repeatable": true,
+  "steps": [
+    "pageWant",
+    "pageWhen",
+    "pageAboutYou",
+    "pageCheckAnswers",
+    "pageConfirmation"
+  ],
   "url": "/"
 }

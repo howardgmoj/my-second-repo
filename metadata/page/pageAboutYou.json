@@ -1,0 +1,68 @@
+{
+  "_id": "pageAboutYou",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "pageAboutYou--Name",
+      "_type": "text",
+      "errors": {
+        "maxLength": {
+          "inline": "Way, way, way too long"
+        }
+      },
+      "label": "Full name",
+      "name": "FullName",
+      "validation": {
+        "maxLength": 40
+      }
+    },
+    {
+      "_id": "pageAboutYou--Email",
+      "_type": "email",
+      "hint": "We’ll use this to send you a copy of your answers, plus important info about how to apply",
+      "label": "Email",
+      "name": "Email"
+    },
+    {
+      "_id": "pageAboutYou--Date",
+      "_type": "date",
+      "hint": "For example, 31 3 1980",
+      "label": "Date of birth",
+      "name": "Date"
+    },
+    {
+      "_id": "pageAboutYou--SelectCountry",
+      "_type": "select",
+      "items": [
+        {
+          "_id": "pageAboutYou--SelectCountry--England",
+          "_type": "option",
+          "text": "England",
+          "value": "England"
+        },
+        {
+          "_id": "pageAboutYou--SelectCountry--NI",
+          "_type": "option",
+          "text": "Northern Ireland",
+          "value": "NI"
+        },
+        {
+          "_id": "pageAboutYou--SelectCountry--Scotland",
+          "_type": "option",
+          "text": "Scotland",
+          "value": "Scotland"
+        },
+        {
+          "_id": "pageAboutYou--SelectCountry--Wales",
+          "_type": "option",
+          "text": "Wales",
+          "value": "Wales"
+        }
+      ],
+      "label": "Which country do you live in?",
+      "name": "Countries"
+    }
+  ],
+  "heading": "Tell us about you",
+  "url": "/about-you"
+}

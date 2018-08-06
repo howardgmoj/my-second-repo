@@ -1,0 +1,38 @@
+{
+  "_id": "pageConfirmation",
+  "_type": "page.confirmation",
+  "components": [
+    {
+      "_id": "pageConfirmation--AnswerYes",
+      "_type": "content",
+      "html": "Because you want this thing {RadiosWant, select, wantMuch{very much} wantMost{more than anything} other{SHOULD NOT DISPLAY} } and you live in {Countries, select, NI{Northern Ireland} other{{Countries}}}, we’ve decided that you can have it.",
+      "show": {
+        "identifier": "RadiosWant",
+        "operator": "match",
+        "value": "^wantM(ost|uch)$"
+      }
+    },
+    {
+      "_id": "pageConfirmation--AnswerNo",
+      "_type": "content",
+      "html": "Because you want this thing {RadiosWant} and you live in {Countries}, we’ve decided that you can not have it.",
+      "show": {
+        "identifier": "RadiosWant",
+        "operator": "match",
+        "value": "^wantNot"
+      }
+    },
+    {
+      "_id": "pageConfirmation--AnswerMaybe",
+      "_type": "content",
+      "html": "Because you want this thing {RadiosWant} and you live in {Countries}, we’re not sure yet whether you can have it. We’ll let you know.",
+      "show": {
+        "identifier": "RadiosWant",
+        "operator": "match",
+        "value": "^wantQuite$"
+      }
+    }
+  ],
+  "heading": "Your result",
+  "url": "/confirmation"
+}

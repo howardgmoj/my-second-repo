@@ -1,0 +1,85 @@
+{
+  "_id": "pageWhen",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "pageWhen--textYouWantIt",
+      "_type": "content",
+      "html": "(Sounds like you really want it...)",
+      "show": {
+        "identifier": "RadiosWant",
+        "operator": "match",
+        "value": "^wantM(ost|uch)$"
+      }
+    },
+    {
+      "_id": "pageWhen--textYouDontWant",
+      "_type": "content",
+      "html": "(Though it sounds like you’re not too bothered...)",
+      "show": {
+        "identifier": "RadiosWant",
+        "operator": "match",
+        "value": "^wantNot"
+      }
+    },
+    {
+      "_id": "pageWhen--DaysCheck",
+      "_type": "checkboxes",
+      "items": [
+        {
+          "_id": "pageWhen--DaysCheck--Monday",
+          "_type": "checkbox",
+          "label": "Monday",
+          "name": "WhenMonday",
+          "value": "yes"
+        },
+        {
+          "_id": "pageWhen--DaysCheck--Tuesday",
+          "_type": "checkbox",
+          "label": "Tuesday",
+          "name": "WhenTuesday",
+          "value": "yes"
+        },
+        {
+          "_id": "pageWhen--DaysCheck--Wednesday",
+          "_type": "checkbox",
+          "label": "Wednesday",
+          "name": "WhenWednesday",
+          "value": "yes"
+        },
+        {
+          "_id": "pageWhen--DaysCheck--Thursday",
+          "_type": "checkbox",
+          "label": "Thursday",
+          "name": "WhenThursday",
+          "value": "yes"
+        },
+        {
+          "_id": "pageWhen--DaysCheck--Friday",
+          "_type": "checkbox",
+          "label": "Friday",
+          "name": "WhenFriday",
+          "value": "yes"
+        },
+        {
+          "_id": "pageWhen--DaysCheck--Saturday",
+          "_type": "checkbox",
+          "label": "Saturday",
+          "name": "WhenSaturday",
+          "value": "yes"
+        },
+        {
+          "_id": "pageWhen--DaysCheck--Sunday",
+          "_type": "checkbox",
+          "label": "Sunday",
+          "name": "WhenSunday",
+          "value": "yes"
+        }
+      ],
+      "legend": "Tick all that apply",
+      "required": true
+    }
+  ],
+  "heading": "When would you use the thing?",
+  "url": "/when-would-you-use-it"
+}
