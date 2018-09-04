@@ -1,0 +1,30 @@
+{
+  "_id": "page.refnumber",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.refnumber--number",
+      "_type": "number",
+      "errors": {
+        "maximum": {
+          "inline": "The reference number is 5 digits starting with '9', for example '91234'",
+          "summary": "The reference number is 5 digits starting with '9', for example '91234'"
+        },
+        "minimum": {
+          "inline": "The reference number is 5 digits starting with '9', for example '91234'",
+          "summary": "The reference number is 5 digits starting with '9', for example '91234'"
+        }
+      },
+      "hint": "If you got a letter about this, it's the number top right (5 digits starting with 9)",
+      "label": "What's your reference number?",
+      "name": "ref-number",
+      "validation": {
+        "maximum": 99999,
+        "minimum": 90000,
+        "required": false
+      }
+    }
+  ],
+  "sectionHeading": "If we've contacted you before",
+  "url": "ref-number"
+}

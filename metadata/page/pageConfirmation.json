@@ -5,17 +5,17 @@
     {
       "_id": "pageConfirmation--AnswerYes",
       "_type": "content",
-      "html": "Because you want this thing {RadiosWant, select, wantMuch{very much} wantMost{more than anything} other{SHOULD NOT DISPLAY} } and you live in {Countries, select, NI{Northern Ireland} other{{Countries}}}, we’ve decided that you can have it.",
+      "html": "## You can get the thing\r\n\r\nBecause you want this thing {RadiosWant, select, wantMuch{very much} wantMost{more than anything} other{SHOULD NOT DISPLAY} } we’ve decided that you can have it.",
       "show": {
         "identifier": "RadiosWant",
-        "operator": "match",
-        "value": "^wantM(ost|uch)$"
+        "operator": "is",
+        "value": "wantMost"
       }
     },
     {
       "_id": "pageConfirmation--AnswerNo",
       "_type": "content",
-      "html": "Because you want this thing {RadiosWant} and you live in {Countries}, we’ve decided that you can not have it.",
+      "html": "## You cannot get the thing\r\n\r\nBecause you want this thing {RadiosWant, select, wantNotMuch{not very much} wantNotAtAll{not at all} other{SHOULD NOT DISPLAY} }, we’ve decided that you cannot have it.\r\n\r\nIf you want to challenge this, contact an eligibility checker in {country, select, england{England} ni{Northern Ireland} scotland{Scotland} wales{Wales} other{{country}}}.",
       "show": {
         "identifier": "RadiosWant",
         "operator": "match",
@@ -25,7 +25,7 @@
     {
       "_id": "pageConfirmation--AnswerMaybe",
       "_type": "content",
-      "html": "Because you want this thing {RadiosWant} and you live in {Countries}, we’re not sure yet whether you can have it. We’ll let you know.",
+      "html": "## You might be able to get the thing\r\n\r\nBecause you only want this thing {RadiosWant, select, wantQuite{quite a lot} other{SHOULD NOT DISPLAY} }, we're not sure if you can have it.\r\n\r\nContact an eligibility checker in {country, select, england{England} ni{Northern Ireland} scotland{Scotland} wales{Wales} other{{country}}} to see if you could get it.",
       "show": {
         "identifier": "RadiosWant",
         "operator": "match",

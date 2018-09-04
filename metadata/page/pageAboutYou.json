@@ -21,7 +21,10 @@
       "_type": "email",
       "hint": "We’ll use this to send you a copy of your answers, plus important info about how to apply",
       "label": "Email",
-      "name": "Email"
+      "name": "Email",
+      "validation": {
+        "required": true
+      }
     },
     {
       "_id": "pageAboutYou--Date",
@@ -31,38 +34,39 @@
       "name": "Date"
     },
     {
-      "_id": "pageAboutYou--SelectCountry",
+      "_id": "pageAboutYou--selectcountry",
       "_type": "select",
       "items": [
         {
-          "_id": "pageAboutYou--SelectCountry--England",
+          "_id": "pageAboutYou--selectcountry--england",
           "_type": "option",
           "text": "England",
-          "value": "England"
+          "value": "england"
         },
         {
-          "_id": "pageAboutYou--SelectCountry--NI",
+          "_id": "pageAboutYou--selectcountry--ni",
           "_type": "option",
           "text": "Northern Ireland",
-          "value": "NI"
+          "value": "ni"
         },
         {
-          "_id": "pageAboutYou--SelectCountry--Scotland",
+          "_id": "pageAboutYou--selectcountry--scotland",
           "_type": "option",
           "text": "Scotland",
-          "value": "Scotland"
+          "value": "scotland"
         },
         {
-          "_id": "pageAboutYou--SelectCountry--Wales",
+          "_id": "pageAboutYou--selectcountry--wales",
           "_type": "option",
           "text": "Wales",
-          "value": "Wales"
+          "value": "wales"
         }
       ],
-      "label": "Which country do you live in?",
-      "name": "Countries"
+      "label": "Select the country where you live",
+      "name": "country"
     }
   ],
-  "heading": "Tell us about you",
+  "heading": "Enter your details",
+  "sectionHeading": "About you",
   "url": "/about-you"
 }

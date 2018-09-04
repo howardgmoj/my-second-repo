@@ -1,0 +1,45 @@
+{
+  "_id": "page.hadbefore",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.hadbefore--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.hadbefore--radios--yes",
+          "_type": "radio",
+          "label": "Yes",
+          "value": "before-yes"
+        },
+        {
+          "_id": "page.hadbefore--radios--no",
+          "_type": "radio",
+          "label": "No",
+          "value": "before-no"
+        },
+        {
+          "_id": "page.hadbefore--radios--dontknow",
+          "_type": "radio",
+          "label": "I do not know",
+          "value": "before-dn"
+        }
+      ],
+      "legend": "Select one answer only",
+      "name": "had-before"
+    },
+    {
+      "_id": "page.hadbefore--text",
+      "_type": "text",
+      "hint": "For example, you were no longer eligible",
+      "label": "Why did you stop having the thing?",
+      "show": {
+        "identifier": "had-before",
+        "operator": "is",
+        "value": "before-yes"
+      }
+    }
+  ],
+  "heading": "Have you had the thing before?",
+  "url": "had-before"
+}

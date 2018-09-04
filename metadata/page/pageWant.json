@@ -10,6 +10,7 @@
           "inline": "Choose one answer only, or that's as far as this goes"
         }
       },
+      "hint": "Don't think too hard about this",
       "items": [
         {
           "_id": "pageWant--RadiosWant--radioMost",
@@ -42,10 +43,10 @@
           "value": "wantNotAtAll"
         }
       ],
-      "legend": "Please answer honestly",
+      "legend": "How much do you want this thing?",
       "name": "RadiosWant"
     }
   ],
-  "heading": "How much do you want this thing?",
+  "sectionHeading": "Your wants and needs",
   "url": "/how-much-do-you-want-this-thing"
 }

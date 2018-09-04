@@ -1,0 +1,23 @@
+{
+  "_id": "page.magiccode",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.magiccode--text",
+      "_type": "text",
+      "hint": "If you do not have a reference number, you'll need a magic code instead (we will have texted it to you)",
+      "label": "What's your magic code?",
+      "name": "magic-code",
+      "validation": {
+        "maxLength": 15,
+        "minLength": 5,
+        "required": {
+          "identifier": "ref-number",
+          "negated": true,
+          "operator": "defined"
+        }
+      }
+    }
+  ],
+  "sectionHeading": "If we've contacted you before"
+}
