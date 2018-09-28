@@ -6,23 +6,24 @@
       "_id": "page.sowhy--textarea",
       "_type": "textarea",
       "label": "So why are you checking if you can get it?",
-      "name": "so-why"
+      "name": "so-why",
+      "show": {
+        "conditionsType": "exactly",
+        "exactly": [
+          {
+            "identifier": "RadiosWant",
+            "operator": "is",
+            "value": "wantNotMuch"
+          },
+          {
+            "identifier": "RadiosWant",
+            "operator": "is",
+            "value": "wantNotAtAll"
+          }
+        ]
+      }
     }
   ],
-  "sectionHeading": "Your wants and needs",
-  "show": {
-    "anyOfConditions": [
-      {
-        "identifier": "RadiosWant",
-        "operator": "is",
-        "value": "wantNotMuch"
-      },
-      {
-        "identifier": "RadiosWant",
-        "operator": "is",
-        "value": "wantNotAtAll"
-      }
-    ]
-  },
+  "sectionHeading": "Your needs",
   "url": "so-why"
 }

@@ -13,5 +13,7 @@
       "repeatableMaximum": 5
     }
   ],
-  "sectionHeading": "Your plans"
+  "enableSteps": true,
+  "sectionHeading": "Your plans",
+  "url": "thing-you-would-do"
 }

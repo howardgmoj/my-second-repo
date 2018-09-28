@@ -33,6 +33,7 @@
       "_type": "text",
       "hint": "For example, you were no longer eligible",
       "label": "Why did you stop having the thing?",
+      "name": "whystop",
       "show": {
         "identifier": "had-before",
         "operator": "is",

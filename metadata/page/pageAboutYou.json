@@ -34,35 +34,35 @@
       "name": "Date"
     },
     {
-      "_id": "pageAboutYou--selectcountry",
-      "_type": "select",
+      "_id": "pageAboutYou--radioscountry",
+      "_type": "radios",
       "items": [
         {
-          "_id": "pageAboutYou--selectcountry--england",
-          "_type": "option",
-          "text": "England",
+          "_id": "pageAboutYou--radioscountry--england",
+          "_type": "radio",
+          "label": "England",
           "value": "england"
         },
         {
-          "_id": "pageAboutYou--selectcountry--ni",
-          "_type": "option",
-          "text": "Northern Ireland",
+          "_id": "pageAboutYou--radioscountry--ni",
+          "_type": "radio",
+          "label": "Northern Ireland",
           "value": "ni"
         },
         {
-          "_id": "pageAboutYou--selectcountry--scotland",
-          "_type": "option",
-          "text": "Scotland",
+          "_id": "pageAboutYou--radioscountry--scotland",
+          "_type": "radio",
+          "label": "Scotland",
           "value": "scotland"
         },
         {
-          "_id": "pageAboutYou--selectcountry--wales",
-          "_type": "option",
-          "text": "Wales",
+          "_id": "pageAboutYou--radioscountry--wales",
+          "_type": "radio",
+          "label": "Wales",
           "value": "wales"
         }
       ],
-      "label": "Select the country where you live",
+      "legend": "Select the country where you live",
       "name": "country"
     }
   ],
